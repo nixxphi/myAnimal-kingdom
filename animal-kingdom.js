@@ -19,9 +19,9 @@ class KingdomAnimalia {
     }
  
        
-    // This method is used as a mediator to allow the private method be used.
-    // This shows Abstraction, a method is declarted but it's implementation details are hidden.
-    identifyself(){
+    // This method is used as a mediator to make the private method accessible.
+    // This shows Abstraction, a method is declared but its implementation details are hidden.
+    static identifyself(){
         this.#identify();
     }
  
@@ -72,7 +72,7 @@ class Arthropoda extends Invertebrate {
     }
 }
  
-class Pisces extends Vertebrate {
+class Fish extends Vertebrate {
     constructor (name) {
         super (name);
         this.bloodtemperature = ('poikilothermic');
@@ -135,11 +135,11 @@ class Mammalia extends Vertebrate  {
 }
  
  
-// Instantiating Objects from the child classes above... I could create an interface for this but i've been down that road and its slippery from all the tears
+// Instantiating Objects from the child classes above... I could create an interface for this but I've been down that road and it's slippery from all the tears
  
 const arthropoda = new Arthropoda ('Arthropoda');
-const fish = new Pisces ('Fish');
-const amphibia = new Amphibia('Amphibia');
+const fish = new Fish ('Fish');
+const amphibian = new Amphibia('Amphibia');
 const reptile = new Reptilia('Reptile');
 const aves = new Aves('Aves');
 const mammal = new Mammalia('Mammal');
