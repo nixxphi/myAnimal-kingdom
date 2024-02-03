@@ -97,7 +97,7 @@ class Amphibia extends Vertebrate  {
 }
   
  
-class Reptilia extends Vertebrate  {
+class Reptiles extends Vertebrate  {
     constructor (name) {
         super (name);
         this.bloodtemperature = ('poikilothermic');
@@ -140,7 +140,7 @@ class Mammalia extends Vertebrate  {
 const arthropoda = new Arthropoda ('Arthropoda');
 const fish = new Fish ('Fish');
 const amphibian = new Amphibia('Amphibia');
-const reptile = new Reptilia('Reptile');
+const reptile = new Reptiles('Reptile');
 const aves = new Aves('Aves');
 const mammal = new Mammalia('Mammal');
  
